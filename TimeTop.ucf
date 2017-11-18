@@ -1,0 +1,35 @@
+
+#Created by Constraints Editor (xc3s200-tq144-5) - 2017/11/08
+NET "CLK" TNM_NET = "CLK";
+TIMESPEC ts_clk = PERIOD "CLK" 40 ns HIGH 50 %;
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK" LOC = P127;
+NET "Rstb" LOC = P51;
+NET "Sw15" LOC = P52;
+NET "Sw2" LOC = P53;
+NET "SwRe15" LOC = P63;
+NET "SwRe2" LOC = P68;
+NET "iPush10" LOC = P44;
+NET "iPush5" LOC = P46;
+NET "iPushS" LOC = P47;
+NET "iPushO" LOC = P50;
+NET "com[3]" LOC = P31;
+NET "com[2]" LOC = P33;
+NET "com[1]" LOC = P36;
+NET "com[0]" LOC = P41;
+NET "oBCD[6]" LOC = P40;
+NET "oBCD[5]" LOC = P35;
+NET "oBCD[4]" LOC = P32;
+NET "oBCD[3]" LOC = P30;
+NET "oBCD[2]" LOC = P27;
+NET "oBCD[1]" LOC = P25;
+NET "oBCD[0]" LOC = P23;
+NET "dp" LOC = P20;
+NET "oLED[0]" LOC = P76;
+NET "oLED[1]" LOC = P69;
+NET "oLED[2]" LOC = P77;
+NET "oLED[3]" LOC = P70;
+NET "oLED[4]" LOC = P78;
+NET "oBuzz" LOC = P125;

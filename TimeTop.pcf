@@ -1,0 +1,108 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 18 07:53:04 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dp" LOCATE = SITE "P20" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P127" LEVEL 1;
+COMP "Sw2" LOCATE = SITE "P53" LEVEL 1;
+COMP "oBCD<0>" LOCATE = SITE "P23" LEVEL 1;
+COMP "oBCD<1>" LOCATE = SITE "P25" LEVEL 1;
+COMP "oBCD<2>" LOCATE = SITE "P27" LEVEL 1;
+COMP "oBCD<3>" LOCATE = SITE "P30" LEVEL 1;
+COMP "oBCD<4>" LOCATE = SITE "P32" LEVEL 1;
+COMP "oBCD<5>" LOCATE = SITE "P35" LEVEL 1;
+COMP "oBCD<6>" LOCATE = SITE "P40" LEVEL 1;
+COMP "Sw15" LOCATE = SITE "P52" LEVEL 1;
+COMP "Rstb" LOCATE = SITE "P51" LEVEL 1;
+COMP "oLED<0>" LOCATE = SITE "P76" LEVEL 1;
+COMP "oLED<1>" LOCATE = SITE "P69" LEVEL 1;
+COMP "oLED<2>" LOCATE = SITE "P77" LEVEL 1;
+COMP "oLED<3>" LOCATE = SITE "P70" LEVEL 1;
+COMP "oLED<4>" LOCATE = SITE "P78" LEVEL 1;
+COMP "iPush10" LOCATE = SITE "P44" LEVEL 1;
+COMP "SwRe2" LOCATE = SITE "P68" LEVEL 1;
+COMP "oBuzz" LOCATE = SITE "P125" LEVEL 1;
+COMP "SwRe15" LOCATE = SITE "P63" LEVEL 1;
+COMP "com<0>" LOCATE = SITE "P41" LEVEL 1;
+COMP "com<1>" LOCATE = SITE "P36" LEVEL 1;
+COMP "com<2>" LOCATE = SITE "P33" LEVEL 1;
+COMP "com<3>" LOCATE = SITE "P31" LEVEL 1;
+COMP "iPush5" LOCATE = SITE "P46" LEVEL 1;
+COMP "iPushO" LOCATE = SITE "P50" LEVEL 1;
+COMP "iPushS" LOCATE = SITE "P47" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP CLK = BEL "u_CLK1ms/r1ms" BEL "u_CLK1s/r1s" BEL "u_Counts/wSO" BEL
+        "u_Counts/wO_3" BEL "u_Counts/wO_1" BEL "u_Counts/wO_0" BEL
+        "u_Counts/wO_2" BEL "u_Counts/wSOv" BEL "u_Counts/wF" BEL
+        "u_Counts/wS" BEL "u_Counts/wOver" BEL "u_Counts/wRe" BEL "u_Buz/wO1"
+        BEL "u_Buz/wBuz2" BEL "u_Buz/wI2" BEL "u_Buz/rCnt2" BEL "u_Buz/rCnt1"
+        BEL "u_Buz/wI1" BEL "u_CLK1ms/rCnt_0" BEL "u_CLK1ms/rCnt_1" BEL
+        "u_CLK1ms/rCnt_2" BEL "u_CLK1ms/rCnt_3" BEL "u_CLK1ms/rCnt_4" BEL
+        "u_CLK1ms/rCnt_5" BEL "u_CLK1ms/rCnt_6" BEL "u_CLK1ms/rCnt_7" BEL
+        "u_CLK1ms/rCnt_8" BEL "u_CLK1ms/rCnt_9" BEL "u_CLK1ms/rCnt_10" BEL
+        "u_CLK1ms/rCnt_11" BEL "u_CLK1ms/rCnt_12" BEL "u_CLK1ms/rCnt_13" BEL
+        "u_CLK1ms/rCnt_14" BEL "u_CLK1s/rCnt_0" BEL "u_CLK1s/rCnt_1" BEL
+        "u_CLK1s/rCnt_2" BEL "u_CLK1s/rCnt_3" BEL "u_CLK1s/rCnt_4" BEL
+        "u_CLK1s/rCnt_5" BEL "u_CLK1s/rCnt_6" BEL "u_CLK1s/rCnt_7" BEL
+        "u_CLK1s/rCnt_8" BEL "u_CLK1s/rCnt_9" BEL "u_Buz/num_0" BEL
+        "u_Buz/num_1" BEL "u_Counts/state_FSM_FFd1" BEL
+        "u_Counts/state_FSM_FFd2" BEL "u_Push5/rCnt_2" BEL "u_Push5/rCnt_1"
+        BEL "u_Push5/rCnt_0" BEL "u_Push5/rDebouce_3" BEL "u_Push5/rDebouce_2"
+        BEL "u_Push5/rDebouce_1" BEL "u_Push5/rDebouce_0" BEL "u_Push5/O" BEL
+        "u_Push5/rTick" BEL "u_Push10/rCnt_2" BEL "u_Push10/rCnt_1" BEL
+        "u_Push10/rCnt_0" BEL "u_Push10/rDebouce_3" BEL "u_Push10/rDebouce_2"
+        BEL "u_Push10/rDebouce_1" BEL "u_Push10/rDebouce_0" BEL "u_Push10/O"
+        BEL "u_Push10/rTick" BEL "u_PushOver/rCnt_2" BEL "u_PushOver/rCnt_1"
+        BEL "u_PushOver/rCnt_0" BEL "u_PushOver/rDebouce_3" BEL
+        "u_PushOver/rDebouce_2" BEL "u_PushOver/rDebouce_1" BEL
+        "u_PushOver/rDebouce_0" BEL "u_PushOver/O" BEL "u_PushOver/rTick" BEL
+        "u_PushState/rCnt_2" BEL "u_PushState/rCnt_1" BEL "u_PushState/rCnt_0"
+        BEL "u_PushState/rDebouce_3" BEL "u_PushState/rDebouce_2" BEL
+        "u_PushState/rDebouce_1" BEL "u_PushState/rDebouce_0" BEL
+        "u_PushState/O" BEL "u_PushState/rTick" BEL
+        "u_FSM/curr_state_FSM_FFd2" BEL "u_FSM/curr_state_FSM_FFd1" BEL
+        "u_FSM/wDigit4_3" BEL "u_FSM/wDigit4_2" BEL "u_FSM/wDigit4_1" BEL
+        "u_FSM/wDigit4_0" BEL "u_FSM/wDigit3_3" BEL "u_FSM/wDigit3_2" BEL
+        "u_FSM/wDigit3_1" BEL "u_FSM/wDigit3_0" BEL "u_FSM/wDigit2_3" BEL
+        "u_FSM/wDigit2_2" BEL "u_FSM/wDigit2_1" BEL "u_FSM/wDigit2_0" BEL
+        "u_10min/w10Digit1_3" BEL "u_10min/w10Digit4_3" BEL
+        "u_10min/w10Digit4_2" BEL "u_10min/w10Digit4_1" BEL
+        "u_10min/w10Digit4_0" BEL "u_10min/w10Digit2_3" BEL
+        "u_10min/w10Digit2_2" BEL "u_10min/w10Digit2_1" BEL
+        "u_10min/w10Digit2_0" BEL "u_10min/w10Digit1_2" BEL
+        "u_10min/w10Digit1_1" BEL "u_10min/w10Digit1_0" BEL
+        "u_10min/w10Digit3_3" BEL "u_10min/w10Digit3_2" BEL
+        "u_10min/w10Digit3_1" BEL "u_10min/w10Digit3_0" BEL "u_10min/wFinish"
+        BEL "u_10min/wStart" BEL "u_10min/wS10" BEL "u_2min/w2Digit2_2" BEL
+        "u_2min/w2Digit2_1" BEL "u_2min/w2Digit2_3" BEL "u_2min/w2Digit2_0"
+        BEL "u_2min/w2Digit3_3" BEL "u_2min/w2Digit3_2" BEL
+        "u_2min/w2Digit3_1" BEL "u_2min/w2Digit3_0" BEL "u_2min/w2Digit4_3"
+        BEL "u_2min/w2Digit4_2" BEL "u_2min/w2Digit4_1" BEL
+        "u_2min/w2Digit4_0" BEL "u_5min/w5Digit2_2" BEL "u_5min/w5Digit2_1"
+        BEL "u_5min/w5Digit2_3" BEL "u_5min/w5Digit2_0" BEL "u_5min/wFinish"
+        BEL "u_5min/wStart" BEL "u_5min/wS5" BEL "u_5min/w5Digit3_3" BEL
+        "u_5min/w5Digit3_2" BEL "u_5min/w5Digit3_1" BEL "u_5min/w5Digit3_0"
+        BEL "u_5min/w5Digit4_3" BEL "u_5min/w5Digit4_2" BEL
+        "u_5min/w5Digit4_1" BEL "u_5min/w5Digit4_0" BEL "u_15min/w15Digit1_2"
+        BEL "u_15min/w15Digit1_1" BEL "u_15min/w15Digit1_3" BEL
+        "u_15min/w15Digit1_0" BEL "u_15min/w15Digit2_0" BEL
+        "u_15min/w15Digit2_1" BEL "u_15min/w15Digit2_2" BEL
+        "u_15min/w15Digit2_3" BEL "u_15min/w15Digit4_3" BEL
+        "u_15min/w15Digit4_2" BEL "u_15min/w15Digit4_1" BEL
+        "u_15min/w15Digit4_0" BEL "u_15min/w15Digit3_3" BEL
+        "u_15min/w15Digit3_2" BEL "u_15min/w15Digit3_1" BEL
+        "u_15min/w15Digit3_0" BEL "u_15min/rCnt" BEL "u_ScanDigit/rCnt500ms_8"
+        BEL "u_ScanDigit/rCnt500ms_7" BEL "u_ScanDigit/rCnt500ms_6" BEL
+        "u_ScanDigit/rCnt500ms_5" BEL "u_ScanDigit/rCnt500ms_4" BEL
+        "u_ScanDigit/rCnt500ms_3" BEL "u_ScanDigit/rCnt500ms_2" BEL
+        "u_ScanDigit/rCnt500ms_1" BEL "u_ScanDigit/rCnt500ms_0" BEL
+        "u_ScanDigit/rCnt_3" BEL "u_ScanDigit/rCnt_2" BEL "u_ScanDigit/rCnt_1"
+        BEL "u_ScanDigit/rCnt_0" BEL "u_ScanDigit/rShift_0" BEL
+        "u_ScanDigit/rShift_1" BEL "u_ScanDigit/rShift_2" BEL
+        "u_ScanDigit/rShift_3" BEL "u_ScanDigit/rCnP" BEL "u_FSM/wDigit1_3"
+        BEL "u_FSM/wDigit1_2" BEL "u_FSM/wDigit1_1" BEL "u_FSM/wDigit1_0" BEL
+        "CLK_BUFGP/BUFG.GCLKMUX" BEL "CLK_BUFGP/BUFG";
+ts_clk = PERIOD TIMEGRP "CLK" 40 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/root/VHDL/Sport/TimeCounts/TimeTop.ncd
+OUTFILE=/root/VHDL/Sport/TimeCounts/TimeTop.bit
+FAMILY=Spartan3
+PART=xc3s200-5tq144
+WORKINGDIR=/root/VHDL/Sport/TimeCounts
+LICENSE=WebPack
+USER_INFO=210640308_0_0_717

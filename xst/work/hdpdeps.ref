@@ -1,0 +1,79 @@
+V3 51
+FL /root/VHDL/Sport/TimeCounts/BCD.vhd 2017/11/01.23:01:10 P.20131013
+EN work/BCD 1511013187 FL /root/VHDL/Sport/TimeCounts/BCD.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/BCD/Behavioral 1511013188 \
+      FL /root/VHDL/Sport/TimeCounts/BCD.vhd EN work/BCD 1511013187
+FL /root/VHDL/Sport/TimeCounts/Buzzer.vhd 2017/11/18.07:52:34 P.20131013
+EN work/Buzzer 1511013183 FL /root/VHDL/Sport/TimeCounts/Buzzer.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Buzzer/Behavioral 1511013184 \
+      FL /root/VHDL/Sport/TimeCounts/Buzzer.vhd EN work/Buzzer 1511013183
+FL /root/VHDL/Sport/TimeCounts/CD10min.vhd 2017/11/17.03:41:34 P.20131013
+EN work/CD10min 1511013175 FL /root/VHDL/Sport/TimeCounts/CD10min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CD10min/Behavioral 1511013176 \
+      FL /root/VHDL/Sport/TimeCounts/CD10min.vhd EN work/CD10min 1511013175
+FL /root/VHDL/Sport/TimeCounts/CD15min.vhd 2017/11/16.10:24:12 P.20131013
+EN work/CD15min 1511013177 FL /root/VHDL/Sport/TimeCounts/CD15min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CD15min/Behavioral 1511013178 \
+      FL /root/VHDL/Sport/TimeCounts/CD15min.vhd EN work/CD15min 1511013177
+FL /root/VHDL/Sport/TimeCounts/CD2min.vhd 2017/11/16.10:24:16 P.20131013
+EN work/CD2min 1511013179 FL /root/VHDL/Sport/TimeCounts/CD2min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CD2min/Behavioral 1511013180 \
+      FL /root/VHDL/Sport/TimeCounts/CD2min.vhd EN work/CD2min 1511013179
+FL /root/VHDL/Sport/TimeCounts/CLK1ms.vhd 2017/11/01.23:32:02 P.20131013
+EN work/CLK1ms 1511013165 FL /root/VHDL/Sport/TimeCounts/CLK1ms.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLK1ms/Behavioral 1511013166 \
+      FL /root/VHDL/Sport/TimeCounts/CLK1ms.vhd EN work/CLK1ms 1511013165
+FL /root/VHDL/Sport/TimeCounts/CLK1s.vhd 2017/11/01.23:22:32 P.20131013
+EN work/CLK1s 1511013167 FL /root/VHDL/Sport/TimeCounts/CLK1s.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLK1s/Behavioral 1511013168 \
+      FL /root/VHDL/Sport/TimeCounts/CLK1s.vhd EN work/CLK1s 1511013167
+FL /root/VHDL/Sport/TimeCounts/Counts_Quarter.vhd 2017/11/17.03:39:30 P.20131013
+EN work/Counts_Quarter 1511013171 \
+      FL /root/VHDL/Sport/TimeCounts/Counts_Quarter.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Counts_Quarter/Behavioral 1511013172 \
+      FL /root/VHDL/Sport/TimeCounts/Counts_Quarter.vhd EN work/Counts_Quarter 1511013171
+FL /root/VHDL/Sport/TimeCounts/Debouce.vhd 2017/11/01.23:17:12 P.20131013
+EN work/Debouce 1511013169 FL /root/VHDL/Sport/TimeCounts/Debouce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/Debouce/Behavioral 1511013170 \
+      FL /root/VHDL/Sport/TimeCounts/Debouce.vhd EN work/Debouce 1511013169
+FL /root/VHDL/Sport/TimeCounts/FSM.vhd 2017/11/10.10:20:26 P.20131013
+EN work/FSM 1511013173 FL /root/VHDL/Sport/TimeCounts/FSM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/FSM/Behavioral 1511013174 \
+      FL /root/VHDL/Sport/TimeCounts/FSM.vhd EN work/FSM 1511013173
+FL /root/VHDL/Sport/TimeCounts/Overtime5min.vhd 2017/11/17.03:41:02 P.20131013
+EN work/Overtime5min 1511013181 FL /root/VHDL/Sport/TimeCounts/Overtime5min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Overtime5min/Behavioral 1511013182 \
+      FL /root/VHDL/Sport/TimeCounts/Overtime5min.vhd EN work/Overtime5min 1511013181
+FL /root/VHDL/Sport/TimeCounts/ScanDigit.vhd 2017/11/13.02:51:40 P.20131013
+EN work/ScanDigit 1511013185 FL /root/VHDL/Sport/TimeCounts/ScanDigit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ScanDigit/Behavioral 1511013186 \
+      FL /root/VHDL/Sport/TimeCounts/ScanDigit.vhd EN work/ScanDigit 1511013185
+FL /root/VHDL/Sport/TimeCounts/TimeTop.vhd 2017/11/17.02:39:58 P.20131013
+EN work/TimeTop 1511013189 FL /root/VHDL/Sport/TimeCounts/TimeTop.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/TimeTop/Structural 1511013190 \
+      FL /root/VHDL/Sport/TimeCounts/TimeTop.vhd EN work/TimeTop 1511013189 \
+      CP CLK1ms CP CLK1s CP Debouce CP Counts_Quarter CP FSM CP CD10min CP CD15min \
+      CP CD2min CP Overtime5min CP Buzzer CP ScanDigit CP BCD
