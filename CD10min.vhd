@@ -14,10 +14,10 @@ Port(
 End CD10min;
 
 Architecture Behavioral of CD10min is
-	signal wS10 : std_logic := '0';
+	signal wS10,rCnt : std_logic := '0';
 	signal w10Digit1 : std_logic_vector(3 downto 0) := "0001";
 	signal w10Digit2,w10Digit3,w10Digit4 : std_logic_vector(3 downto 0);
-	signal wStart,wFinish : std_logic;
+	signal wStart,wFinish : std_logic := '0';
 Begin
 
 	o10Digit1 <= w10Digit1;
@@ -33,16 +33,23 @@ Begin
 		if(Rstb='0' or iRe='1') then
 			wFinish <= '0';
 			wS10 <= '0';
+			rCnt <= '0';
 		elsif(rising_edge(CLK)) then
 			if(I10='1') then
 				wS10 <= not wS10;
 				wFinish <= '0';
-			elsif(i1ms='1' and w10Digit1=0 and w10Digit2=0 and w10Digit3=0 and w10Digit4=0) then
-				wFinish <= '1';
+				rCnt <= '1';
+			elsif(i1s='1' and rCnt='0') then
+				wFinish <= '0';
+				rCnt <= '0';
+			elsif(i1ms='1' and w10Digit1=0 and w10Digit2=0 and w10Digit3=0 and w10Digit4=0 and rCnt='1') then
 				wS10 <= '0';
+				wFinish <= '1';
+				rCnt <= '0';
 			else
 				wS10 <= wS10;
 				wFinish <= wFinish;
+				rCnt <= rCnt;
 			end if;
 		end if;
 	end Process;

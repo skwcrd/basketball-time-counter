@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Nov 18 07:53:04 2017
+// Written by: Map P.20131013 on Mon Nov 20 14:00:19 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -35,18 +35,18 @@ NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 TIMEGRP CLK = BEL "u_CLK1ms/r1ms" BEL "u_CLK1s/r1s" BEL "u_Counts/wSO" BEL
         "u_Counts/wO_3" BEL "u_Counts/wO_1" BEL "u_Counts/wO_0" BEL
         "u_Counts/wO_2" BEL "u_Counts/wSOv" BEL "u_Counts/wF" BEL
-        "u_Counts/wS" BEL "u_Counts/wOver" BEL "u_Counts/wRe" BEL "u_Buz/wO1"
-        BEL "u_Buz/wBuz2" BEL "u_Buz/wI2" BEL "u_Buz/rCnt2" BEL "u_Buz/rCnt1"
-        BEL "u_Buz/wI1" BEL "u_CLK1ms/rCnt_0" BEL "u_CLK1ms/rCnt_1" BEL
-        "u_CLK1ms/rCnt_2" BEL "u_CLK1ms/rCnt_3" BEL "u_CLK1ms/rCnt_4" BEL
-        "u_CLK1ms/rCnt_5" BEL "u_CLK1ms/rCnt_6" BEL "u_CLK1ms/rCnt_7" BEL
-        "u_CLK1ms/rCnt_8" BEL "u_CLK1ms/rCnt_9" BEL "u_CLK1ms/rCnt_10" BEL
-        "u_CLK1ms/rCnt_11" BEL "u_CLK1ms/rCnt_12" BEL "u_CLK1ms/rCnt_13" BEL
-        "u_CLK1ms/rCnt_14" BEL "u_CLK1s/rCnt_0" BEL "u_CLK1s/rCnt_1" BEL
-        "u_CLK1s/rCnt_2" BEL "u_CLK1s/rCnt_3" BEL "u_CLK1s/rCnt_4" BEL
-        "u_CLK1s/rCnt_5" BEL "u_CLK1s/rCnt_6" BEL "u_CLK1s/rCnt_7" BEL
-        "u_CLK1s/rCnt_8" BEL "u_CLK1s/rCnt_9" BEL "u_Buz/num_0" BEL
-        "u_Buz/num_1" BEL "u_Counts/state_FSM_FFd1" BEL
+        "u_Counts/wS" BEL "u_Counts/wOver" BEL "u_Counts/wRe" BEL "u_Buz/wRe"
+        BEL "u_Buz/wO1" BEL "u_Buz/wBuz2" BEL "u_Buz/wI2" BEL "u_Buz/wI1" BEL
+        "u_Buz/rCnt1" BEL "u_Buz/rCnt2" BEL "u_CLK1ms/rCnt_0" BEL
+        "u_CLK1ms/rCnt_1" BEL "u_CLK1ms/rCnt_2" BEL "u_CLK1ms/rCnt_3" BEL
+        "u_CLK1ms/rCnt_4" BEL "u_CLK1ms/rCnt_5" BEL "u_CLK1ms/rCnt_6" BEL
+        "u_CLK1ms/rCnt_7" BEL "u_CLK1ms/rCnt_8" BEL "u_CLK1ms/rCnt_9" BEL
+        "u_CLK1ms/rCnt_10" BEL "u_CLK1ms/rCnt_11" BEL "u_CLK1ms/rCnt_12" BEL
+        "u_CLK1ms/rCnt_13" BEL "u_CLK1ms/rCnt_14" BEL "u_CLK1s/rCnt_0" BEL
+        "u_CLK1s/rCnt_1" BEL "u_CLK1s/rCnt_2" BEL "u_CLK1s/rCnt_3" BEL
+        "u_CLK1s/rCnt_4" BEL "u_CLK1s/rCnt_5" BEL "u_CLK1s/rCnt_6" BEL
+        "u_CLK1s/rCnt_7" BEL "u_CLK1s/rCnt_8" BEL "u_CLK1s/rCnt_9" BEL
+        "u_Buz/num_0" BEL "u_Buz/num_1" BEL "u_Counts/state_FSM_FFd1" BEL
         "u_Counts/state_FSM_FFd2" BEL "u_Push5/rCnt_2" BEL "u_Push5/rCnt_1"
         BEL "u_Push5/rCnt_0" BEL "u_Push5/rDebouce_3" BEL "u_Push5/rDebouce_2"
         BEL "u_Push5/rDebouce_1" BEL "u_Push5/rDebouce_0" BEL "u_Push5/O" BEL
@@ -74,14 +74,15 @@ TIMEGRP CLK = BEL "u_CLK1ms/r1ms" BEL "u_CLK1s/r1s" BEL "u_Counts/wSO" BEL
         "u_10min/w10Digit1_1" BEL "u_10min/w10Digit1_0" BEL
         "u_10min/w10Digit3_3" BEL "u_10min/w10Digit3_2" BEL
         "u_10min/w10Digit3_1" BEL "u_10min/w10Digit3_0" BEL "u_10min/wFinish"
-        BEL "u_10min/wStart" BEL "u_10min/wS10" BEL "u_2min/w2Digit2_2" BEL
-        "u_2min/w2Digit2_1" BEL "u_2min/w2Digit2_3" BEL "u_2min/w2Digit2_0"
-        BEL "u_2min/w2Digit3_3" BEL "u_2min/w2Digit3_2" BEL
-        "u_2min/w2Digit3_1" BEL "u_2min/w2Digit3_0" BEL "u_2min/w2Digit4_3"
-        BEL "u_2min/w2Digit4_2" BEL "u_2min/w2Digit4_1" BEL
-        "u_2min/w2Digit4_0" BEL "u_5min/w5Digit2_2" BEL "u_5min/w5Digit2_1"
-        BEL "u_5min/w5Digit2_3" BEL "u_5min/w5Digit2_0" BEL "u_5min/wFinish"
-        BEL "u_5min/wStart" BEL "u_5min/wS5" BEL "u_5min/w5Digit3_3" BEL
+        BEL "u_10min/wStart" BEL "u_10min/rCnt" BEL "u_10min/wS10" BEL
+        "u_2min/w2Digit2_2" BEL "u_2min/w2Digit2_1" BEL "u_2min/w2Digit2_3"
+        BEL "u_2min/w2Digit2_0" BEL "u_2min/w2Digit3_3" BEL
+        "u_2min/w2Digit3_2" BEL "u_2min/w2Digit3_1" BEL "u_2min/w2Digit3_0"
+        BEL "u_2min/w2Digit4_3" BEL "u_2min/w2Digit4_2" BEL
+        "u_2min/w2Digit4_1" BEL "u_2min/w2Digit4_0" BEL "u_5min/w5Digit2_2"
+        BEL "u_5min/w5Digit2_1" BEL "u_5min/w5Digit2_3" BEL
+        "u_5min/w5Digit2_0" BEL "u_5min/rCnt" BEL "u_5min/wStart" BEL
+        "u_5min/wS5" BEL "u_5min/wFinish" BEL "u_5min/w5Digit3_3" BEL
         "u_5min/w5Digit3_2" BEL "u_5min/w5Digit3_1" BEL "u_5min/w5Digit3_0"
         BEL "u_5min/w5Digit4_3" BEL "u_5min/w5Digit4_2" BEL
         "u_5min/w5Digit4_1" BEL "u_5min/w5Digit4_0" BEL "u_15min/w15Digit1_2"

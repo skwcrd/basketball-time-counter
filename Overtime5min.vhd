@@ -14,10 +14,10 @@ Port(
 End Overtime5min;
 
 Architecture Behavioral of Overtime5min is
-	signal wS5 : std_logic := '0';
+	signal wS5,rCnt : std_logic := '0';
 	signal w5Digit2 : std_logic_vector(3 downto 0) := "0101";
 	signal w5Digit1,w5Digit3,w5Digit4 : std_logic_vector(3 downto 0);
-	signal wStart,wFinish : std_logic;
+	signal wStart,wFinish : std_logic := '0';
 Begin
 
 	o5Digit1 <= w5Digit1;
@@ -33,16 +33,23 @@ Begin
 		if(Rstb='0') then
 			wS5 <= '0';
 			wFinish <= '0';
+			rCnt <= '0';
 		elsif(rising_edge(CLK)) then
 			if(I5='1') then
 				wS5 <= not wS5;
 				wFinish <= '0';
-			elsif(i1ms='1' and w5Digit1=0 and w5Digit2=0 and w5Digit3=0 and w5Digit4=0) then
-				wFinish <= '1';
+				rCnt <= '1';
+			elsif(i1s='1' and rCnt='0') then
+				wFinish <= '0';
+				rCnt <= '0';
+			elsif(i1ms='1' and w5Digit1=0 and w5Digit2=0 and w5Digit3=0 and w5Digit4=0 and rCnt='1') then
 				wS5 <= '0';
+				wFinish <= '1';
+				rCnt <= '0';
 			else
 				wS5 <= wS5;
 				wFinish <= wFinish;
+				rCnt <= rCnt;
 			end if;
 		end if;
 	end Process;
