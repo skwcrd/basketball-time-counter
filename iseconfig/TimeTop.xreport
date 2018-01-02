@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-20T13:47:49</DateModified>
+  <DateModified>2018-01-02T05:16:58</DateModified>
   <ModuleName>TimeTop</ModuleName>
   <SummaryTimeStamp>2017-11-20T13:30:15</SummaryTimeStamp>
-  <SavedFilePath>D:/TimeCounts/iseconfig/TimeTop.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/TimeCounts\</ImplementationReportsDirectory>
+  <SavedFilePath>/root/VHDL/Sport/TimeCounts/iseconfig/TimeTop.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/root/VHDL/Sport/TimeCounts/</ImplementationReportsDirectory>
   <DateInitialized>2017-11-10T04:08:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
